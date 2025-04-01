@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom";
 import ChessGame from "./components/ChessGame";
-import VideoChat from "./components/VideoChat";
+// Remove unused VideoChat import
 import GameOver from "./components/GameOver";
-import Register from "./pages/Register"; // ✅ Import Register Page
-import Login from "./pages/Login"; // ✅ Import Login Page
+import Register from "./pages/Register";
+import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import Chat from "./pages/Chat";
 
@@ -36,22 +36,18 @@ function App() {
 
 // Extracted MainGame component
 const MainGame = () => {
-    const [room, setRoom] = useState("");
+    // Remove unused setRoom since the input is commented out
+    const [room] = useState("");  // Removed setRoom from destructuring
 
     return (
         <>
-            {/* <input
-                type="text"
-                placeholder="Enter Room ID"
-                value={room}
-                onChange={(e) => setRoom(e.target.value)}
-            /> */}
             <ChessGame room={room} />
-            {/* <VideoChat room={room} /> */}
+            {/* Removed commented VideoChat component */}
         </>
     );
-};
 
+    
+};
 // HomePage component
 const HomePage = () => {
     const navigate = useNavigate();
