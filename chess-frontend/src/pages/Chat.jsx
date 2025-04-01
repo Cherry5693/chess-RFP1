@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { io } from "socket.io-client";
 import '../styles/chat.css';
 
-const BASE_URL = "https://chess-project-jvvt.onrender.com";
+const BASE_URL = "https://chess-rfp1.onrender.com";
 const socket = io(BASE_URL, { transports: ["websocket", "polling"] });
 
 const Chat = () => {

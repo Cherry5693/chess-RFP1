@@ -7,7 +7,7 @@ import Chat from "../pages/Chat.jsx";
 import VideoChat from "./VideoChat.js";
 
 //const socket = io("http://localhost:5000");
-const socket = io("https://chess-project-jvvt.onrender.com");
+const socket = io("https://chess-rfp1.onrender.com");
 
 const ChessGame = () => {
     const [game, setGame] = useState(new Chess());
