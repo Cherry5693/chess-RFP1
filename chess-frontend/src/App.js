@@ -18,7 +18,7 @@ function App() {
                     <Route path="/" element={<HomePage />} />
 
                     {/* Main Game */}
-                    <Route path="/MainGame" element={<MainGame />} />
+                    <Route path="/maingame" element={<MainGame />} />
 
                     {/* Game Over Page */}
                     <Route path="/game-over" element={<GameOver />} />
